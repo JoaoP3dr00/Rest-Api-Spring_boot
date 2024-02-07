@@ -1,0 +1,62 @@
+Big picture:
+	We’re going to create a simple payroll service 
+	that manages the employees of a company. We’ll 
+	store employee objects in a (H2 in-memory) database, 
+	and access them (via something called JPA). Then we’ll 
+	wrap that with something that will allow access over 
+	the internet (called the Spring MVC layer).
+	
+	H2-in-memory:
+		O H2 é um banco de dados relacional escrito em Java. 
+		Quando mencionado como "H2 in-memory", significa que 
+		estamos usando o banco de dados H2 em sua configuração 
+		de memória. Em outras palavras, os dados são armazenados 
+		temporariamente na memória RAM do computador em vez de em 
+		um disco rígido permanente. Isso é útil para desenvolvimento 
+		e teste, pois os dados são perdidos quando o aplicativo é 
+		desligado, mas é mais rápido do que acessar um banco de dados 
+		persistente em disco.
+		
+	JPA (Java Persistence API):
+		JPA é uma API de persistência Java que permite aos 
+		desenvolvedores Java mapear objetos de domínio para tabelas 
+		de banco de dados relacionais. Com o JPA, os desenvolvedores 
+		podem definir entidades Java que representam objetos de 
+		negócios e mapeá-los para tabelas de banco de dados usando 
+		anotações. JPA simplifica o acesso e a manipulação de dados 
+		em um banco de dados relacional, abstraindo a complexidade da 
+		interação com o banco de dados subjacente.
+	
+	Spring MVC layer:
+		O Spring MVC é um framework de desenvolvimento web baseado em 
+		Java que facilita a criação de aplicativos web usando o padrão 
+		MVC (Model-View-Controller). A "camada Spring MVC" refere-se 
+		à parte da aplicação que lida com a interação do usuário, 
+		recebendo solicitações HTTP, processando-as e gerando respostas 
+		apropriadas. No contexto do texto fornecido, a camada Spring 
+		MVC provavelmente será usada para expor o serviço de folha de 
+		pagamento como uma API RESTful, permitindo que os clientes 
+		acessem e gerenciem os dados dos funcionários por meio de 
+		solicitações HTTP.
+		
+	geral:
+		Em resumo, no contexto do texto dado, o serviço de folha de 
+		pagamento será desenvolvido usando o banco de dados H2 em 
+		memória para armazenar os dados dos funcionários temporariamente, o 
+		JPA será utilizado para mapear objetos Java para tabelas de banco
+		de dados e a camada Spring MVC será usada para expor o serviço 
+		como uma API web acessível via HTTP. Essas tecnologias combinadas 
+		permitem o desenvolvimento de um sistema robusto e escalável para 
+		gerenciar os funcionários de uma empresa.
+		
+
+The following code defines an Employee in our system.
+
+nonrest/src/main/java/payroll/Employee.java
+		
+		
+		
+		
+		
+		
+		
